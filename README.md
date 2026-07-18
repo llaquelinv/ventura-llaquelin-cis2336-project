@@ -46,4 +46,4 @@ CIS 2336 Web Development
 
 ## Live Website
 
-[View the ArtConnect website]()
+[View the ArtConnect website](https://llaquelinv.github.io/ventura-llaquelin-cis2336-project/)
