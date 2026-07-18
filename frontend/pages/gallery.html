@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Gallery</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- Header and Navigation -->
+    <header>
+        <div class="logo">
+            <h1>ArtConnect</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="submission.html">Submit Artwork</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--Gallery Intro-->
+        <section class="gallery-intro">
+            <p class="section-label">Explore Original Work</p>
+            <h2>Artconnect Gallery</h2>
+            
+            <p>
+                Discover paintings, digital artwork, and photography created by artists.
+
+            </p>
+
+        </section>
+
+        <!--Gallery buttons-->
+        <section class="gallery-controls">
+
+            <button class="filter-button active" data-filter="all">
+                ALL
+            </button>
+
+            <button class="filter-button" data-filter="acrylic">
+                Acrylic
+            </button>
+
+             <button class="filter-button" data-filter="oil">
+                Oil
+            </button>
+
+             <button class="filter-button" data-filter="watercolor">
+                Watercolor
+            </button>
+
+             <button class="filter-button" data-filter="Photography">
+                Photography
+            </button>
+
+             <button class="filter-button" data-filter="digital">
+                Digital
+            </button>
+        </section>
+
+        <!--artwork Gallery-->
+
+        <section class="gallery-grid">
+        
+            <article class="gallery-card" data-category="acrylic">
+                    <img
+                        src="../images/artwork1.jpg"
+                        alt="Abstract acrylic painting"
+                    >
+
+                    <div class="gallery-card-content">
+                        <h3>Emerald Dream</h3>
+                        <p><strong>Artist:</strong> Galina Victoria </p>
+                        <p><strong>Category:</strong> Acrylic Painting</p>
+                        <p><strong>Price:</strong> Not for Sale</p>
+                    </div>
+                </article>
+
+                <article class="gallery-card" data-category="oil">
+                    <img
+                        src="../images/artwork2.jpg"
+                        alt="Landscape oil painting"
+                    >
+
+                    <div class="gallery-card-content">
+                        <h3>Happy Time</h3>
+                        <p><strong>Artist:</strong> Kulong Wang </p>
+                        <p><strong>Category:</strong> Oil Painting </p>
+                        <p><strong>Price:</strong> $600</p>
+                    </div>
+                </article>
+
+                <article class="gallery-card" data-category="watercolor">
+                    <img
+                        src="../images/artwork3.jpg"
+                        alt="Merging watercolor painting"
+                    >
+
+                    <div class="gallery-card-content">
+                        <h3>Merging</h3>
+                        <p><strong>Artist:</strong> Maria Teresa Rizzi </p>
+                        <p><strong>Category:</strong> Watercolor Painting </p>
+                        <p><strong>Price:</strong> $220</p>
+                    </div>
+                </article>
+
+                <article class="gallery-card" data-category="acrylic">
+                    <img
+                        src="../images/artwork4.jpg"
+                        alt="Abstract acrylic painting"
+                    >
+
+                    <div class="gallery-card-content">
+                        <h3>Sunset Over the Grand Canal</h3>
+                        <p><strong>Artist:</strong> Behshad Arjomandi </p>
+                        <p><strong>Category:</strong> Acrylic Painting </p>
+                        <p><strong>Price:</strong> $540</p>
+                    </div>
+                </article>
+
+                <article class="gallery-card" data-category="Photography">
+                    <img
+                        src="../images/artwork5.jpg"
+                        alt="Reach Photography"
+                    >
+
+                    <div class="gallery-card-content">
+                        <h3>Reach</h3>
+                        <p><strong>Artist:</strong> Raffaella De Amicis </p>
+                        <p><strong>Category:</strong> Photography </p>
+                        <p><strong>Price:</strong> $390</p>
+                    </div>
+                </article>
+
+                <article class="gallery-card" data-category="digital">
+                    <img
+                        src="../images/artwork6.jpg"
+                        alt="Digital portrait artwork"
+                    >
+
+                    <div class="gallery-card-content">
+                        <h3>Nothing Behind Me</h3>
+                        <p><strong>Artist:</strong> Yehan Wang </p>
+                        <p><strong>Category:</strong> Digital </p>
+                        <p><strong>Price:</strong> $500</p>
+                    </div>
+                </article>
+
+        </section>
+
+    </main>
+
+   <!--Footer-->
+    <footer>
+        <p>
+            &copy; 2026 ArtConnect. Designed by Llaquelin Ventura.
+        </p>
+
+    </footer>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

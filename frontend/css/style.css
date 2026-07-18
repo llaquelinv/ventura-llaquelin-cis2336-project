@@ -1,0 +1,855 @@
+/*header and nav*/
+header {
+    background-color: #697184;
+    color: #F2F1EF;
+    padding: 22px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #F2F1EF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}
+ 
+/* REMOVE BULLETS AND PLACE NAV IN A ROW*/
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+header nav li {
+    margin: 0;
+    padding: 0; 
+}
+
+header nav a {
+    color: #F2F1EF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    color: #D8CFD0;
+}
+
+/*Welcome section*/
+.hero {
+    position: relative;
+    height: 650px;
+
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #F2F1EF;
+
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: normal;
+    line-height: 0.95;
+    margin-bottom: 25px;
+}
+
+.hero-description{
+    font-size: 1.2rem;
+    max-width: 650px;
+    margin: 0 auto 35px;
+}
+
+.hero-label{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap: wrap;
+}
+
+.button{
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-button{
+    background-color: #F2F1EF;
+    color: #413F3D;
+    border: 2px solid #F2F1EF;
+}
+
+.secondary-button{
+    background-color: transparent;
+    color: #F2F1EF;
+    border: 2px solid #F2F1EF;
+}
+
+.primary-button:hover{
+    background-color: #D8CFD0;
+    border-color: #D8CFD0;
+}
+
+.secondary-button:hover{
+    background-color: #F2F1EF;
+    color: #413F3D;
+}
+
+/* About section */
+
+.about {
+    background-color: #D8CFD0;
+    text-align: center;
+    padding: 80px 8%;
+}
+
+.section-label {
+    color: #697184;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3rem;
+    color: #413F3D;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #414141
+
+}
+
+/*---Video-----*/
+.featured-video {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #F2F1EF;
+}
+
+
+.featured-video h2 {
+    max-width: 1000px;
+    margin: 0 auto 35px;
+    color: #413F3D;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.featured-video p:not(.section-label)  {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+    font-size: 1.15rem;
+}
+
+.video-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/*----Featured artwork------ */
+
+/*styles entire section*/
+.featured-artwork {
+    background-color: #D8CFD0;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+/*style the heading*/
+.featured-artwork h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3rem;
+    color: #413F3D;
+    margin-bottom: 35px;
+}
+
+/*put art in one row*/
+.artwork-container {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+
+/*style each art card*/
+.artwork-card{
+    width:550px;
+    background-color: #F2F1EF;
+    padding: 18px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* make images the same size*/
+.artwork-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/*style art titles, details, price*/
+.artwork-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    color: #413F3D;
+    margin-bottom: 8px;
+}
+
+.artwork-card p {
+    margin-bottom: 6px;
+    color: #413F3D;
+}
+
+.price {
+    color: #697184;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*feautured event section*/
+.featured-event {
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: #F2F1EF;
+}
+.section-level {
+    text-transform: uppercase;
+    color: #697184; 
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.event-image,
+.event-content {
+    flex: 1;
+}
+
+.event-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+.event-content h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #413F3D;
+}
+
+.event-content p {
+    margin-bottom: 12px;
+    color: #413F3D;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.event-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    background-color: #697184;
+    color: #F2F1EF;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+/*Developer*/
+
+.developer-contact {
+    padding: 10px 8%;
+    text-align: center;
+    background-color: #D8CFD0;
+    color: #413F3D;
+    font-family: Georgia, "Times New Roman", serif;
+
+
+}
+
+.developer-contact h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #413F3D;
+
+}
+
+.developer-contact a {
+    color: #413F3D;
+}
+
+footer {
+    padding: 1px;
+    background-color: #697184;
+    color: #F2F1EF;
+    text-align: center;
+}
+
+/* Gallery intro*/
+.gallery-intro {
+    padding: 20px 8% 30px;
+    text-align: center;
+    background-color: #F2F1EF;
+}
+
+.gallery-intro h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: #413F3D;
+    margin-bottom: 15px;
+}
+
+/*Filter buttons*/
+.gallery-controls {
+    padding: 10px 8% 40px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    background-color: #F2F1EF
+}
+
+.filter-button {
+    padding: 11px 20px;
+    border: 2px solid #697184;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #413F3D;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+.filter-button:hover,
+.filter-button.active {
+    background-color: #697184;
+    color: #F2F1EF;
+}
+
+/* Gallery layout */
+.gallery-grid {
+    padding: 30px 8% 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    background-color: #D8CFD0;
+
+}
+
+.gallery-card {
+    background-color: #F2F1EF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-card-content {
+    padding: 20px;
+}
+
+.gallery-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #413F3D;
+}
+
+
+.gallery-card p {
+    margin-bottom: 7px;
+    color: #413F3D;
+
+}
+
+.gallery-card .price {
+    color: #697184;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.gallery-card.hidden {
+    display: none;
+}
+
+/* Responsive Gallery */
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-intro h2 {
+        font-size: 2.6rem;
+    }
+}
+
+/*Events intro*/
+
+.events-intro {
+    padding: 20px 8% 30px;
+    text-align: center;
+    background-color: #F2F1EF;
+}
+
+.events-intro h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: #413F3D;
+    margin-bottom: 15px;
+}
+
+.events-grid {
+    padding: 30px 8% 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    background-color: #D8CFD0;
+}
+
+.event-card {
+    background-color: #F2F1EF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.event-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.event-card-content {
+    padding: 20px;
+}
+
+.event-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #413F3D;
+}
+
+
+.event-card p {
+    margin-bottom: 7px;
+    color: #413F3D;
+
+}
+
+.event-summary {
+    margin-top: 14px;
+}
+
+.event-details-button {
+    margin-top: 15px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 25px;
+    background-color: #697184;
+    color: #F2F1EF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.event-details-button:hover {
+    background-color: #413F3D;
+}
+
+/*dynamic detail section*/
+.event-detail-panel {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #F2F1EF;
+}
+
+.event-detail-panel h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.8rem;
+    color: #413F3D;
+    margin-bottom: 20px;
+}
+
+.event-detail-panel p {
+    max-width: 800px;
+    margin: 0 auto 12px;
+}
+
+/* Responsive events */
+@media (max-width: 800px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .events-intro h2 {
+        font-size: 2.7rem;
+    }
+}
+
+/*submission page*/
+
+.submission-intro {
+    padding: 20px 8% 30px;
+    text-align: center;
+    background-color: #F2F1EF;
+}
+
+.submission-intro h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: #413F3D;
+    margin-bottom: 15px;
+}
+
+/*form section*/
+.submission-section {
+    padding: 45px 8% 80px;
+    background-color: #D8CFD0;
+}
+
+#artwork-form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #F2F1EF;
+    border-radius: 12px;
+    
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    color: #413F3D;
+    font-weight: 600;
+}
+
+.form-group label span {
+    color: #8A3D3D;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #B1A6A4;
+    border-radius: 6px;
+    background-color: white;
+    color: #413F3D;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid #697184;
+    border-color: #697184;
+}
+
+.full-width {
+    grid-column: 1 / -1
+}
+
+.form-help {
+    margin-top: 6px;
+    font-size: .90rem;
+    color: #8A3D3D
+}
+
+.error-message {
+    min-height: 20px;
+    margin-top: 5px;
+    color: #8A3D3D;
+    font-size: 0.9rem;
+}
+
+.input-error {
+    border: 2px solid #8A3D3D !important;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.submit-button {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 30px;
+    background-color: #697184;
+    color: #F2F1EF;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #413F3D;
+}
+
+.form-success-message {
+    text-align: center;
+    color: #2F6B46;
+    font-weight: bold;
+}
+
+/*responsive form*/
+
+@media (max-width: 700px) {
+    #artwork-form {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .submission-intro h2 {
+        font-size: 2.7rem;
+    }
+}
+
+/*FAQ intro*/
+
+.faq-intro {
+    padding: 20px 8% 30px;
+    text-align: center;
+    background-color: #F2F1EF;
+}
+
+.faq-intro h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 4.5rem;
+    color: #413F3D;
+    margin-bottom: 15px;
+}
+
+.faq-intro p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #413F3D;
+    font-size: 1rem;
+}
+
+
+/*FAQ section*/
+.faq-section {
+    padding: 45px 8% 80px;
+    background-color: #D8CFD0;
+
+}
+
+.faq-container {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 18px;
+    overflow: hidden;
+    background-color: #F2F1EF;
+    border-radius: 8px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 20px 24px;
+    border: none;
+    background-color: #F2F1EF;
+    color: #413F3D;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background-color: #B1A6A4;
+}
+
+.faq-icon {
+    margin-left: 20px;
+    color: #697184;
+    font-family: Arial, sans-serif;
+    font-size: 1.6rem;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 24px 22px;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #413F3D;
+    line-height: 1.7;
+}
+
+/*show answer when clicked */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question {
+    background-color: #B1A6A4;
+}
+
+@media (max-width: 700px) {
+    .faq-intro h2 {
+        font-size: 2.7rem;
+    }
+
+    .faq-question {
+        padding: 18px;
+        font-size: 1rem;
+    }
+
+    .faq-answer {
+        padding: 0 18px 18px;
+    }
+}
+
+/*References intro*/
+
+.references-intro {
+    padding: 20px 8% 30px;
+    text-align: center;
+    background-color: #F2F1EF;
+}
+
+.references-intro h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: #413F3D;
+    margin-bottom: 15px;
+}
+
+.references-intro p {
+    margin: 0 auto;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.references-section {
+    padding: 45px 8% 80px;
+    background-color: #D8CFD0;
+}
+
+.reference-card {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    padding: 30px;
+
+    background-color: #F2F1EF;
+
+    border-radius: 8px;
+}
+
+.reference-card h3 {
+    margin-bottom: 15px;
+    color: #413F3D;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.reference-card p,
+.reference-card li {
+    color: #413F3D;
+    line-height: 1.8;
+}
+
+.reference-card ul {
+    padding-left: 20px;
+}
+
+.reference-card code {
+    background-color: #EAE7E4;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
